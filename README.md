@@ -6,7 +6,7 @@ If Lockable module is activated Devise Autosigninable uses Lockable functionalit
 If user is blocked or not confirmed he can't sign in with Devise Autosigninable too.
 
 Devise Autosigninable signs in a user based on an autosignin token (random hash with length 32).
-If signed in user trys to sign in with Devise Autosigninable he will be sign out first and than go to sign in.
+If signed in user tries to sign in with Devise Autosigninable he will be sign out first and than go to sign in.
 So if token is incorrect user will be signed out anyway.
 
 Devise Autosigninable compatibile with Rails 5
@@ -18,7 +18,7 @@ Installation
 
 * Add devise_autosigninable to Gemfile:
 
-    `gem 'devise_autosigninable', '1.1.0', git: 'https://github.com/lapinadaria/devise-autosigninable.git', branch: 'rails5.1'`
+    `gem 'devise_autosigninable', '1.1.0'`
 
 * Add :autosigninable to your Devise modules in model, for example:
 
