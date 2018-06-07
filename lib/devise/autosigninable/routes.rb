@@ -4,7 +4,7 @@ module ActionDispatch::Routing
 
     # Setup routes for +AutosigninController+.
     def devise_autosignin(mapping, controllers)
-      get "/:id/autosignin/:autosignin_token",
+      get "/:#{mapping.name}_id/autosignin/:autosignin_token",
           controller: controllers[:autosignin],
           action: 'create',
           as: :autosignin
